@@ -6,45 +6,51 @@
   <title>Evolution — Infloresce</title>
   <style>
     body {
-      background-color: #0c0f10;
-      color: #f2f2f2;
-      font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
       padding: 2rem;
-      line-height: 1.6;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #0a0f0f;
+      color: #ffffff;
+      background-image: url('1.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
-    header {
-      text-align: center;
-      margin-bottom: 3rem;
+    .overlay {
+      background-color: rgba(10, 15, 15, 0.75);
+      padding: 2rem;
+      border-radius: 1rem;
+      max-width: 800px;
+      margin: 3rem auto;
     }
     h1 {
       font-size: 3rem;
-      margin-bottom: 0.5rem;
+      text-align: center;
     }
     h2 {
-      font-weight: normal;
+      font-size: 1.2rem;
       font-style: italic;
       color: #ccc;
-    }
-    .lyrics {
-      max-width: 700px;
-      margin: 0 auto 3rem;
-      white-space: pre-wrap;
-      font-size: 1.1rem;
-      color: #e6e6e6;
+      text-align: center;
+      margin-bottom: 2rem;
     }
     .audio-player {
       text-align: center;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
     audio {
       width: 100%;
       max-width: 400px;
     }
+    .lyrics {
+      white-space: pre-wrap;
+      font-size: 1.1rem;
+      color: #e6e6e6;
+      text-align: center;
+    }
     footer {
       text-align: center;
-      margin-top: 4rem;
-      font-size: 0.9rem;
+      margin-top: 3rem;
     }
     a {
       color: #a0cfff;
@@ -56,27 +62,26 @@
   </style>
 </head>
 <body>
-  <header>
+  <div class="overlay">
     <h1>EVOLUTION</h1>
     <h2>You make me feel impossibly human</h2>
-  </header>
 
-  <div class="audio-player">
-    <audio controls>
-      <source src="https://infloresceofficial.github.io/Evolution-impossiblyhuman.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-  </div>
+    <div class="audio-player">
+      <audio controls>
+        <source src="https://infloresceofficial.github.io/Evolution-impossiblyhuman.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
 
-  <div class="lyrics">
-VI  
-Am I a machine?  
+    <div class="lyrics">
+VI<br>
+Am I a machine?<br>
 Do I mean a thing?
-  </div>
+    </div>
 
-  <footer>
-    <a href="/">← back to infloresce</a>
-  </footer>
+    <footer>
+      <a href="/">← back to infloresce</a>
+    </footer>
+  </div>
 </body>
 </html>
-
